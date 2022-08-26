@@ -8,9 +8,9 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 # Below is elephant sql database 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jowfndzs:s_fKMzxmDIg6D1gpNd2s_fLNlahUzEh3@heffalump.db.elephantsql.com/jowfndzs'
-# Below is Heroku database  ....    update: Heroku did "maintenance" looks like database was changed/moved
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bwefhrbxvfhmuc:afab3e90282c5ee93ae50e6d96041c61ace9b0e3d10bdd3b26187f4bbe7fa65b@ec2-34-227-135-211.compute-1.amazonaws.com:5432/ddvqeel8ank3q5'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jowfndzs:s_fKMzxmDIg6D1gpNd2s_fLNlahUzEh3@heffalump.db.elephantsql.com/jowfndzs'
+# Below is Heroku database  
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://lldbmokvitqdzv:b907bebfd62170edc9b76cef753774986c254f2f326897b971d884346c4076a3@ec2-52-72-56-59.compute-1.amazonaws.com:5432/d5cg5ig2v1po9f'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 ma = Marshmallow(app)
