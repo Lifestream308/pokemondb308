@@ -153,7 +153,7 @@ def new_post():
         db.session.commit()
         flash('Your post has been created!', 'success')
         return redirect(url_for('home'))
-    return render_template('create_post.html', title='New Car', form=form, legend='New Car')
+    return render_template('create_post.html', title='New Pokemon', form=form, legend='New Pokemon')
 
 
 @app.route("/post/<int:post_id>")
@@ -179,7 +179,7 @@ def update_post(post_id):
         form.title.data = post.title
         form.content.data = post.content
     return render_template('create_post.html', title='Update Post',
-                           form=form, legend='Update Car')
+                           form=form, legend='Update Pokemon')
 
 
 @app.route("/post/<int:post_id>/delete", methods=['POST'])
